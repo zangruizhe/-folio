@@ -12,6 +12,8 @@ dl, dd, ol, ul, figure {
 
 /** Variables **********************************************/
 $base-font-family:              Helvetica, sans-serif;
+$post-title-font-family:              OFL Sorts Mill Goudy TT, Helvetica, sans-serif;
+$post-content-font-size:   16px;
 $base-line-height:              1.5em;
 $horizontal-spacing-unit:       50px;
 $vertical-spacing-unit:         40px;
@@ -25,6 +27,7 @@ $caption_color: #aaa;
 
 /* COLORS  */
 $red:  #FF3636;
+$old_red:  #B83A2B;
 $orange: #F29105;
 $blue: #2698BA;
 $green: #11D68B;
@@ -37,7 +40,8 @@ $grey-color-light: #ddd;  /* navigation bar border */
 $text-color:     #666;
 
 /* Set theme color *************************/
-$theme-color:   $red;
+//$theme-color:   $red;
+$theme-color:   $old_red;
 
 
 /************************************************************/
@@ -165,7 +169,6 @@ blockquote {
 
 /**
  * Code formatting
- */
 pre,
 code {
     font-size: 15px;
@@ -187,6 +190,40 @@ pre {
         padding-left: 0;
     }
 }
+*/
+
+/* Code */
+code,
+pre {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+code {
+  padding: .25em .5em;
+  font-size: 85%;
+  color: #bf616a;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+}
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: .8rem;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f9f9f9;
+}
+pre code {
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  background-color: transparent;
+}
+
 
 
 

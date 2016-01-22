@@ -55,7 +55,6 @@ display: line;
     position: relative;
     font-size: 20px;
     display: block;
-    opacity: 0.75;
     width: 100%;
     text-align: center;
     padding-top: 25px;
@@ -66,6 +65,7 @@ display: line;
         font-size:75px;
     }
     h2{
+        opacity: 0.75;
         font-size:25px;
     }
 }
@@ -132,6 +132,7 @@ text-align: center;
 margin-bottom: $vertical-spacing-unit;
 }
 .post-title {
+font-family: $post-title-font-family;
 font-size: 42px;
 letter-spacing: -1px;
 line-height: 1;
@@ -139,21 +140,26 @@ line-height: 1;
 font-size: 36px;
     }
 }
+
 .post-content {
+font-size: $post-content-font-size;
 h2 {
-font-size: 42px;
+font-size: 30px;
+line-height: 38px;
 @include media-query($on-laptop) {
-font-size: 28px;
+font-size: 38px;
         }
     }
 h3 {
-font-size: 30px;
+font-size: 24px;
+line-height: 40px;
 @include media-query($on-laptop) {
 font-size: 22px;
         }
     }
 h4 {
 font-size: 20px;
+line-height: 38px;
 @include media-query($on-laptop) {
 font-size: 18px;
         }
@@ -273,4 +279,25 @@ color: $caption_color;
 text-align: center;
 vertical-align: middle;
 font-size: $caption_font_size;
+}
+
+/** 
+ * Archive pages **********************************************************
+*/
+
+.post-archive-title {
+font-family: $post-title-font-family;
+font-size: 30px;
+letter-spacing: -1px;
+line-height: 1;
+@include media-query($on-laptop) {
+font-size: 22px;
+    }
+}
+
+.post-archive-time {
+color: $grey-color;
+margin-bottom: 0px; 
+font-size: 26px;
+
 }

@@ -10,7 +10,7 @@ This theme implements a built-in Jekyll feature, the use of Pygments, for sytanx
 
 Produces something like this: 
 
-{% highlight c++ %}
+{% highlight c++ linenos %}
 
 int main(int argc, char const *argv[])
 {
